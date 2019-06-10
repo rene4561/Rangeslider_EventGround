@@ -1,0 +1,25 @@
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="intensitetsSlider">
+</div>
+
+<script>
+intensitetsFilter	
+	Opret intensitetsNiveau som variable med værdi fra intensitetsSlider  
+	Opret intensitetsResultat som variable "nul"
+    
+    Hvis intensitetNiveau er 0-33 -> intensitetsResultat = "lav"
+    Ellers hvis intensitet er 34-66 -> intensitetsResultat = "middel"
+    Ellers -> intensitetsResultat = "høj"
+
+	Vis intensitetsResultat
+		Hvis intensitetsResultat er "lav" 
+			- vis elementer med klassen "lav" i et CSS grid på 3 koloner
+			- skjul elementer med klasserne "middel" og "høj"
+		Hvis intensitetsResultat er "middel"
+			- vis elementer med klassen "middel" i et CSS grid på 3 koloner
+			- skjul elementer med klasserne "lav" og "høj"
+		Hvis intensitetsResultat er "høj"
+			- vis "høj" elementer med klassen høj i et CSS grid på 3 koloner
+			- skujl elementer med klasserne "middel" og "lav"
+Slut
+</script>
